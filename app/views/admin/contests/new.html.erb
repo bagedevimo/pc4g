@@ -1,0 +1,15 @@
+<section class="section">
+  <div class="container">
+    <h1 class="title is-4">New contest</h1>
+
+    <%= form_with model: @contest, url: admin_contests_path, builder: BulmaFormBuilder do |f| %>
+      <div class="columns">
+        <div class="column is-4">
+          <%= render partial: "form", locals: { f: f, contest: @contest } %>
+        </div>
+      </div>
+
+      <%= f.button "Save", class: "button is-primary" %>
+    <% end %>
+  </div>
+</section>

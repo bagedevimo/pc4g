@@ -1,0 +1,38 @@
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column"><h1 class="title is-4">Upcoming contests</h1></div>
+      <div class="column is-narrow">
+        <%= link_to new_admin_contest_path do %>
+          <span class="icon">
+          <i class="fa-solid fa-plus"></i>
+          </span>
+
+          New contest
+        <% end %>
+      </div>
+    </div>
+
+    <% if @upcoming_contests.any? %>
+      <div class="list">
+        <%= render @upcoming_contests %>
+      </div>
+    <% else %>
+      <p>
+        Doesn't look like there is anything coming up :(
+      </p>
+    <% end %>
+  </div>
+</section>
+
+<% if @past_contests.any? %>
+  <section class="section">
+    <div class="container">
+      <h1 class="title is-4">Past contests</h1>
+
+      <div class="list">
+        <%= render @past_contests %>
+      </div>
+    </div>
+  </section>
+<% end %>

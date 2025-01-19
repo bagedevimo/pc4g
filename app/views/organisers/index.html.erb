@@ -1,0 +1,41 @@
+Welcome!
+
+Are you a returning site organiser, or looking to become one?
+
+<div class="row">
+  <div class="col">
+    <div class="frame">
+      <div class="frame__header u-text-center">
+        <h5 class="frame__title">
+          I've organised a PC4G site before
+        </h5>
+
+        <div class="frame__subtitle">
+          Nice to see you again
+        </div>
+      </div>
+
+      <div class="frame__body u-text-center">
+        <%= link_to "Log in", new_organiser_session_path %>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="frame">
+      <div class="frame__header u-text-center">
+        <h5 class="frame__title">
+          I'd like to organise for the first time
+        </h5>
+
+        <div class="frame__subtitle">
+          Welcome aboard!
+        </div>
+      </div>
+
+      <div class="frame__body u-text-center">
+        <%= link_to "Register", new_organiser_path %>
+      </div>
+    </div>
+  </div>
+</div>

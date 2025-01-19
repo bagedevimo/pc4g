@@ -1,0 +1,42 @@
+<section class="section">
+  <h1 class="title">PC4G Admin</h1>
+
+  <div class="columns">
+    <div class="column is-3">
+
+      <% if flash[:error] %>
+        <div class="notification is-danger">
+          <%= flash[:error] %>
+        </div>
+      <% end %>
+
+      <%= form_with model: @admin, url: admin_sessions_path do |f| %>
+        <div class="field">
+          <%= f.label :email, class: "label" %>
+
+          <div class="control has-icons-left">
+            <%= f.text_field :email, class: "input" %>
+
+            <span class="icon is-small is-left">
+              <i class="fa-solid fa-envelope"></i>
+             </span>
+          </div>
+        </div>
+
+        <div class="field">
+          <%= f.label :password, class: "label" %>
+
+          <div class="control has-icons-left">
+            <%= f.password_field :password, class: "input" %>
+
+            <span class="icon is-small is-left">
+              <i class="fa-solid fa-lock"></i>
+             </span>
+          </div>
+        </div>
+
+        <%= f.button "Go", class: "button is-primary is-fullwidth" %>
+      <% end %>
+    </div>
+  </div>
+</section>

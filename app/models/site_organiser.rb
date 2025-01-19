@@ -1,0 +1,2 @@
+class SiteOrganiser < ApplicationRecord
+end

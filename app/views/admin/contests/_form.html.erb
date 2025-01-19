@@ -1,0 +1,31 @@
+<div class="field">
+  <%= f.label :name, class: "label" %>
+
+  <p class="control">
+    <%= f.text_field :name, class: "input" %>
+  </p>
+
+  <p class="help">
+    Public information, shown to teachers when registering
+  </p>
+</div>
+
+<div class="field">
+  <%= f.label :starts_at, class: "label" %>
+
+  <p class="control">
+  <%= f.datetime_field :starts_at, class: "input" %>
+  </p>
+
+  <p class="help">Public information, unused by most logic, just helpful to show</p>
+</div>
+
+<div class="field">
+  <%= f.label :ends_at, class: "label" %>
+
+  <p class="control">
+    <%= f.datetime_field :ends_at, class: "input" %>
+  </p>
+
+  <p class="help">Public information, unused by most logic, just helpful to show</p>
+</div>

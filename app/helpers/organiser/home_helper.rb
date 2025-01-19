@@ -1,0 +1,2 @@
+module Organiser::HomeHelper
+end
