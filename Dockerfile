@@ -2,7 +2,7 @@
 
 # Make sure RUBY_VERSION matches the Ruby version in .ruby-version and Gemfile
 ARG RUBY_VERSION=3.3.0
-FROM registry.docker.com/library/ruby:$RUBY_VERSION-slim as base
+FROM registry.docker.com/library/ruby:$RUBY_VERSION-slim AS base
 
 # Rails app lives here
 WORKDIR /rails
@@ -15,7 +15,7 @@ ENV RAILS_ENV="production" \
 
 
 # Throw-away build stage to reduce size of final image
-FROM base as build
+FROM base AS build
 
 # Install packages needed to build gems
 RUN apt-get update -qq && \
@@ -23,7 +23,7 @@ RUN apt-get update -qq && \
 
 ENV BUN_INSTALL=/usr/local/bun
 ENV PATH=/usr/local/bun/bin:$PATH
-ARG BUN_VERSION=1.0.12
+ARG BUN_VERSION=1.1.45
 RUN curl -fsSL https://bun.sh/install | bash -s -- "bun-v${BUN_VERSION}"
 
 # Install application gems
