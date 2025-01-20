@@ -67,7 +67,7 @@ jobs:
     concurrency: deploy-group
     environment: production
     needs: [test, lint]
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/main'
     steps:
       - uses: actions/checkout@v4
       - uses: superfly/flyctl-actions/setup-flyctl@master
