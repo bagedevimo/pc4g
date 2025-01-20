@@ -6,6 +6,6 @@ class Contest < ApplicationRecord
 
   validates :name, :starts_at, :ends_at, presence: true
 
-  has_many :site_contests
+  has_many :site_contests, dependent: :destroy
   has_many :sites, through: :site_contests
 end
