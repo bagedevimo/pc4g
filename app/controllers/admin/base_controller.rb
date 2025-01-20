@@ -12,7 +12,7 @@ class Admin::BaseController < ApplicationController
   private
 
   def authenticate_admin!
-    if admin_session = AdminSession.find_by(id: session[:current_admin_session_id])
+    if (admin_session = AdminSession.find_by(id: session[:current_admin_session_id]))
       @current_admin_session = admin_session
       @current_admin = admin_session.admin
     else
