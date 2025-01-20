@@ -70,3 +70,5 @@ end
 gem 'dockerfile-rails', '>= 1.6', group: :development
 
 gem 'devise', '~> 4.9'
+
+gem "bundler-audit", "~> 0.9.2"
