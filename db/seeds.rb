@@ -8,16 +8,16 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
-Admin.create!(email: 'fake@example.com', password: 'password')
+Admin.create!(email: "fake@example.com", password: "password")
 
 Contest.create!(
-  name: 'Example upcoming contest',
+  name: "Example upcoming contest",
   starts_at: 10.days.from_now.change(hour: 9),
   ends_at: 10.days.from_now.change(hour: 17)
 )
 
 Contest.create!(
-  name: 'Example past contest',
+  name: "Example past contest",
   starts_at: 10.days.ago.change(hour: 9),
   ends_at: 10.days.ago.change(hour: 17)
 )
