@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class Admin::SessionsController < Admin::BaseController
   skip_before_action :authenticate_admin!, only: %i[new create]
 

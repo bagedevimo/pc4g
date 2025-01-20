@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class CreateSiteOrganisers < ActiveRecord::Migration[7.1]
   def change
     create_table :site_organisers do |t|

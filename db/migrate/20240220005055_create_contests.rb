@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class CreateContests < ActiveRecord::Migration[7.1]
   def change
     create_table :contests do |t|

@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class BulmaFormBuilder < ActionView::Helpers::FormBuilder
   alias parent_label label
 
