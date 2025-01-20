@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 module Admin::ContestsHelper
   def contest_countdown_summary(contest)
     if contest.starts_at > Time.current
