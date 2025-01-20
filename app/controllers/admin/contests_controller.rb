@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Admin::ContestsController < Admin::BaseController
   def index
     @upcoming_contests = Contest.starts_in_future
