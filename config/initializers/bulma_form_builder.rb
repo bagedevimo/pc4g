@@ -73,8 +73,8 @@ class BulmaFormBuilder < ActionView::Helpers::FormBuilder
     end
   end
 
-  def select_with_label(method, _choices = nil, options = {}, html_options = {})
-    select(method, choices = nil, options, html_options) do
+  def select_with_label(method, choices = nil, options = {}, html_options = {})
+    select(method, choices, options, html_options) do
       label(method)
     end
   end
@@ -95,10 +95,10 @@ class BulmaFormBuilder < ActionView::Helpers::FormBuilder
     end
   end
 
-  def check_box_with_label(method, _options = {}, checked_value = "1", unchecked_value = "0")
+  def check_box_with_label(method, options = {}, checked_value = "1", unchecked_value = "0")
     div_field do
       div_control do
-        check_box(method, options = {}, checked_value,
+        check_box(method, options, checked_value,
                   unchecked_value) + parent_label(method, nil, { class: "checkbox m-l-5" })
       end
     end
