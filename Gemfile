@@ -79,4 +79,4 @@ gem "brakeman", "~> 7.0"
 
 gem "rubocop-rspec", "~> 3.5"
 
-gem "rubocop", "~> 1.72"
+gem "rubocop", "~> 1.73"
