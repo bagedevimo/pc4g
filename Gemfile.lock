@@ -108,7 +108,7 @@ GEM
       responders
       warden (~> 1.2.3)
     diff-lcs (1.5.1)
-    dockerfile-rails (1.7.7)
+    dockerfile-rails (1.7.9)
       rails (>= 3.0.0)
     drb (2.2.1)
     error_highlight (0.6.0)
@@ -172,7 +172,7 @@ GEM
     puma (6.6.0)
       nio4r (~> 2.0)
     racc (1.8.1)
-    rack (3.1.10)
+    rack (3.1.11)
     rack-session (2.1.0)
       base64 (>= 0.1.0)
       rack (>= 3.0.0)
