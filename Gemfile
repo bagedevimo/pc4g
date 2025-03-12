@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-ruby "3.3.0"
+ruby "3.3.7"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.3"
@@ -52,7 +52,7 @@ group :development, :test do
 
   gem "rspec-rails", "~> 7.1.1"
 
-  gem "standard"
+  gem "standard", ">= 1.35.1"
   gem "standard-rails"
 end
 
