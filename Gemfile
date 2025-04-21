@@ -77,6 +77,6 @@ gem "bundler-audit", "~> 0.9.2"
 
 gem "brakeman", "~> 7.0"
 
-gem "rubocop-rspec", "~> 3.5"
+gem "rubocop-rspec", "~> 3.6"
 
 gem "rubocop", "~> 1.73"
