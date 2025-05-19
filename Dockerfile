@@ -13,6 +13,7 @@ ENV RAILS_ENV="production" \
     BUNDLE_PATH="/usr/local/bundle" \
     BUNDLE_WITHOUT="development"
 
+# Keep in sync with github actions workflow
 RUN gem update --system 3.6.5
 
 # Throw-away build stage to reduce size of final image
