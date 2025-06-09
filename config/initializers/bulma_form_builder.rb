@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class BulmaFormBuilder < ActionView::Helpers::FormBuilder
-  alias parent_label label
+  alias_method :parent_label, :label
 
   def label(method, text = nil, options = {}, &block)
     super(method, text, merge_class(options, "label"), &block)
@@ -99,7 +99,7 @@ class BulmaFormBuilder < ActionView::Helpers::FormBuilder
     div_field do
       div_control do
         check_box(method, options, checked_value,
-                  unchecked_value) + parent_label(method, nil, { class: "checkbox m-l-5" })
+          unchecked_value) + parent_label(method, nil, {class: "checkbox m-l-5"})
       end
     end
   end
@@ -120,7 +120,7 @@ class BulmaFormBuilder < ActionView::Helpers::FormBuilder
     new_options
   end
 
-  alias merge_class merge_class_attribute_value
+  alias_method :merge_class, :merge_class_attribute_value
 
   def div_control(&block)
     @template.content_tag(:div, class: "control", &block)

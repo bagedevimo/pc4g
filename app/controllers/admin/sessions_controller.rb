@@ -19,10 +19,10 @@ class Admin::SessionsController < Admin::BaseController
       @admin = Admin.new(email: admin_params[:email])
 
       flash[:error] = if admin.blank?
-                        I18n.t("admin.sessions.wrong_email")
-                      else
-                        I18n.t("admin.sessions.wrong_password")
-                      end
+        I18n.t("admin.sessions.wrong_email")
+      else
+        I18n.t("admin.sessions.wrong_password")
+      end
     end
 
     render :new, status: :unprocessable_entity
