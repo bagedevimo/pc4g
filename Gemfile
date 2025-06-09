@@ -67,16 +67,12 @@ group :development do
   # gem "spring"
 
   gem "error_highlight", ">= 0.4.0", platforms: [:ruby]
+
+  gem "bundler-audit", "~> 0.9.2"
+
+  gem "dockerfile-rails", ">= 1.6"
+
+  gem "brakeman", "~> 7.0"
 end
 
-gem "dockerfile-rails", ">= 1.6", group: :development
-
 gem "devise", "~> 4.9"
-
-gem "bundler-audit", "~> 0.9.2"
-
-gem "brakeman", "~> 7.0"
-
-gem "rubocop-rspec", "~> 3.6"
-
-gem "rubocop", "~> 1.75"
