@@ -111,7 +111,7 @@ GEM
     dockerfile-rails (1.7.9)
       rails (>= 3.0.0)
     drb (2.2.3)
-    error_highlight (0.6.0)
+    error_highlight (0.7.0)
     erubi (1.13.1)
     globalid (1.2.1)
       activesupport (>= 6.1)
@@ -351,7 +351,7 @@ DEPENDENCIES
   web-console
 
 RUBY VERSION
-   ruby 3.3.7p123
+   ruby 3.4.4
 
 BUNDLED WITH
-   2.6.5
+   2.6.7
