@@ -72,7 +72,7 @@ group :development do
 
   gem "dockerfile-rails", ">= 1.6"
 
-  gem "brakeman", "~> 7.0"
+  gem "brakeman", "~> 7.1"
 end
 
 gem "devise", "~> 4.9"
