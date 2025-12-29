@@ -16,7 +16,7 @@ class Admin::ContestsController < Admin::BaseController
     if @contest.save
       redirect_to admin_contest_path(@contest)
     else
-      render :new, status: :unprocessable_entity
+      render :new, status: :unprocessable_content
     end
   end
 

@@ -25,7 +25,7 @@ class Admin::SessionsController < Admin::BaseController
       end
     end
 
-    render :new, status: :unprocessable_entity
+    render :new, status: :unprocessable_content
   end
 
   private
