@@ -75,4 +75,4 @@ group :development do
   gem "brakeman", "~> 7.1"
 end
 
-gem "devise", "~> 4.9"
+gem "devise", "~> 5.0"
