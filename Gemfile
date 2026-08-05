@@ -68,11 +68,11 @@ group :development do
 
   gem "error_highlight", ">= 0.4.0", platforms: [:ruby]
 
-  gem "bundler-audit", "~> 0.9.2"
+  gem "bundler-audit", "~> 0.9.3"
 
   gem "dockerfile-rails", ">= 1.6"
 
-  gem "brakeman", "~> 7.1"
+  gem "brakeman", "~> 8.0"
 end
 
-gem "devise", "~> 4.9"
+gem "devise", "~> 5.0"
