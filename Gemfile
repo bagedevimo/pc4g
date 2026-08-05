@@ -76,3 +76,6 @@ group :development do
 end
 
 gem "devise", "~> 5.0"
+
+# Needs newer version to avoid CVE
+gem "websocket-driver", ">= 0.8.2"
