@@ -106,7 +106,6 @@ GEM
       rails (>= 3.0.0)
     drb (2.2.3)
     erb (6.0.7)
-    error_highlight (0.7.2)
     erubi (1.13.1)
     globalid (1.4.0)
       activesupport (>= 6.1)
@@ -338,7 +337,6 @@ DEPENDENCIES
   debug
   devise (~> 5.0)
   dockerfile-rails (>= 1.6)
-  error_highlight (>= 0.4.0)
   jsbundling-rails
   pg (~> 1.6)
   puma (>= 5.0)
